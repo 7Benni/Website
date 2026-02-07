@@ -52,3 +52,27 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+  # Optional: deploy the same static site to the user/organization Pages repository
+  # If you want the site available at https://<your-username>.github.io/ (root),
+  # create a repository named "<your-username>.github.io" and add a
+  # `PERSONAL_TOKEN` secret (personal access token with `repo` permission) to this repo.
+  deploy_user_site:
+    needs: build
+    runs-on: ubuntu-latest
+    if: ${{ secrets.PERSONAL_TOKEN }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Deploy to user Pages repo
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          # Use a personal token stored in repo secrets
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+          BRANCH: main
+          FOLDER: out
+          # Destination repo – deploys to e.g. 'your-username/your-username.github.io'
+          # The action will push the contents of `out/` to that repo's `main` branch.
+          TARGET_REPO: ${{ github.repository_owner }}
+          TARGET_BRANCH: main
