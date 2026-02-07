@@ -75,19 +75,9 @@ export default function HomePage() {
               <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-white/20 transition-colors">
                 <Camera size={24} />
               </div>
-              <h3 className="text-2xl font-semibold mb-3">Landscape</h3>
+              <h3 className="text-2xl font-semibold mb-3">Dogs</h3>
               <p className="text-gray-400">
-                Capturing breathtaking vistas and the raw beauty of natural landscapes around the world
-              </p>
-            </div>
-
-            <div className="group bg-white/5 p-8 rounded-xl hover:bg-white/10 transition-all border border-white/10">
-              <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-white/20 transition-colors">
-                <Camera size={24} />
-              </div>
-              <h3 className="text-2xl font-semibold mb-3">Aerial</h3>
-              <p className="text-gray-400">
-                Unique perspectives from above, showcasing the world from a different angle with drone technology
+                Portraits and candid moments of dogs — capturing personality, emotion, and movement
               </p>
             </div>
 
@@ -97,7 +87,17 @@ export default function HomePage() {
               </div>
               <h3 className="text-2xl font-semibold mb-3">Nature</h3>
               <p className="text-gray-400">
-                Documenting wildlife, flora, and the intricate details found in the natural environment
+                Landscapes and natural scenes — celebrating form, light, and the quiet moments in wild places
+              </p>
+            </div>
+
+            <div className="group bg-white/5 p-8 rounded-xl hover:bg-white/10 transition-all border border-white/10">
+              <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-white/20 transition-colors">
+                <Camera size={24} />
+              </div>
+              <h3 className="text-2xl font-semibold mb-3">Wildlife</h3>
+              <p className="text-gray-400">
+                Candid and dynamic wildlife photography — emphasizing behavior, habitat, and conservation-minded storytelling
               </p>
             </div>
           </div>

@@ -10,7 +10,7 @@ export const galleryImages: GalleryImage[] = [
     id: 1,
     src: "/Website/images/photo1.JPG",
     alt: "Photo 1",
-    category: "landscape",
+    category: "nature",
     settings: {
       aperture: "2.8",
       shutter: "1/250",
@@ -24,7 +24,7 @@ export const galleryImages: GalleryImage[] = [
     id: 2,
     src: "/Website/images/photo2.JPG",
     alt: "Photo 2",
-    category: "landscape",
+    category: "nature",
     settings: {
       aperture: "4",
       shutter: "1/125",
@@ -38,7 +38,7 @@ export const galleryImages: GalleryImage[] = [
     id: 3,
     src: "/Website/images/photo3.JPG",
     alt: "Photo 3",
-    category: "aerial",
+    category: "wildlife",
     settings: {
       aperture: "5.6",
       shutter: "1/500",
@@ -52,7 +52,7 @@ export const galleryImages: GalleryImage[] = [
     id: 4,
     src: "/Website/images/photo4.JPG",
     alt: "Photo 4",
-    category: "nature",
+    category: "wildlife",
     settings: {
       aperture: "8",
       shutter: "1/60",
@@ -66,7 +66,7 @@ export const galleryImages: GalleryImage[] = [
     id: 5,
     src: "/Website/images/photo5.JPG",
     alt: "Photo 5",
-    category: "landscape",
+    category: "nature",
     settings: {
       aperture: "11",
       shutter: "1/30",
@@ -80,7 +80,7 @@ export const galleryImages: GalleryImage[] = [
     id: 6,
     src: "/Website/images/photo6.JPG",
     alt: "Photo 6",
-    category: "nature",
+    category: "dogs",
     settings: {
       aperture: "4",
       shutter: "1/200",
@@ -94,7 +94,7 @@ export const galleryImages: GalleryImage[] = [
     id: 7,
     src: "/Website/images/photo7.JPG",
     alt: "Photo 7",
-    category: "landscape",
+    category: "nature",
     settings: {
       aperture: "6.3",
       shutter: "1/160",
@@ -108,7 +108,7 @@ export const galleryImages: GalleryImage[] = [
     id: 8,
     src: "/Website/images/photo8.JPG",
     alt: "Photo 8",
-    category: "landscape",
+    category: "nature",
     settings: {
       aperture: "9",
       shutter: "1/80",
@@ -121,7 +121,7 @@ export const galleryImages: GalleryImage[] = [
   {
     id: 9,
     src: "/Website/images/photo9.jpg",
-    alt: "Photo 9",
+    category: "wildlife",
     category: "seascape",
     settings: {
       aperture: "11",
