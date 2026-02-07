@@ -10,8 +10,8 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "Visual Stories | Photography Portfolio",
-  description: "Professional photography portfolio showcasing visual stories through stunning imagery",
+  title: "Bennis Photographie | Photography Portfolio",
+  description: "Photography portfolio by Bennis Photographie — showcasing visual stories through stunning imagery",
 };
 
 export default function RootLayout({

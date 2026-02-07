@@ -22,7 +22,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="text-xl font-bold tracking-tight hover:text-gray-300 transition-colors">
-            Visual Stories
+            Bennis Photographie
           </Link>
 
           {/* Desktop Navigation */}

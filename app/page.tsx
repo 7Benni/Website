@@ -23,7 +23,7 @@ export default function HomePage() {
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
           <div className="inline-flex items-center justify-center p-2 bg-white/10 backdrop-blur-sm rounded-full mb-6">
             <Camera className="mr-2" size={20} />
-            <span className="text-sm font-medium">Professional Photography</span>
+            <span className="text-sm font-medium">Bennis Photographie</span>
           </div>
           
           <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mb-6 tracking-tight">
