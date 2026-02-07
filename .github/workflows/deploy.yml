@@ -32,6 +32,9 @@ jobs:
         run: npm ci
 
       - name: Build
+        env:
+          # project pages are hosted under /<repo>; set this so Next builds with correct basePath
+          NEXT_PUBLIC_BASE_PATH: "/${{ github.event.repository.name }}"
         run: npm run build
 
       - name: Upload artifact
