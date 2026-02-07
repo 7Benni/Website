@@ -121,8 +121,8 @@ export const galleryImages: GalleryImage[] = [
   {
     id: 9,
     src: "/Website/images/photo9.jpg",
+    alt: "Photo 9",
     category: "wildlife",
-    category: "seascape",
     settings: {
       aperture: "11",
       shutter: "1/125",
