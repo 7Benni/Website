@@ -10,7 +10,7 @@ export default function HomePage() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=1920&q=80"
+            src="/Website/images/photo9.jpg"
             alt="Hero background"
             fill
             className="object-cover opacity-40"
