@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { galleryImages } from "@/data/gallery";
 import { useMemo, useState } from "react";
+import Lightbox from "@/components/Lightbox";
 import { Tag } from "lucide-react";
 
 export default function GalleryPage() {
@@ -18,6 +19,9 @@ export default function GalleryPage() {
       ? galleryImages
       : galleryImages.filter(img => img.category === filter);
   }, [filter]);
+
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [lightboxIndex, setLightboxIndex] = useState(0);
 
   return (
     <div className="min-h-screen py-20 px-4">
@@ -53,6 +57,10 @@ export default function GalleryPage() {
             <div
               key={image.id}
               className="group relative break-inside-avoid overflow-hidden rounded-lg cursor-pointer"
+              onClick={() => {
+                setLightboxIndex(index);
+                setLightboxOpen(true);
+              }}
             >
               <div className="relative aspect-[4/3] sm:aspect-auto rounded-lg overflow-hidden">
                 <Image
@@ -94,6 +102,15 @@ export default function GalleryPage() {
               </div>
             </div>
           ))}
+
+          {lightboxOpen && (
+            <Lightbox
+              images={filteredImages.map(i => ({ src: i.src, alt: i.alt }))}
+              index={lightboxIndex}
+              onClose={() => setLightboxOpen(false)}
+              onChange={(newIndex) => setLightboxIndex(newIndex)}
+            />
+          )}
         </div>
 
         {/* Empty State */}

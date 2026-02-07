@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
+import DarkToggle from "@/components/DarkToggle";
 import { useState } from "react";
 
 const navLinks = [
@@ -40,6 +41,10 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
+          </div>
+
+          <div className="hidden md:flex items-center space-x-4">
+            <DarkToggle />
           </div>
 
           {/* Mobile Menu Button */}

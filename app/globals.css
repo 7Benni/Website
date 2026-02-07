@@ -13,6 +13,12 @@ body {
   font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
 }
 
+/* Light theme override when .light class is present on <html> */
+html.light {
+  --background: #ffffff;
+  --foreground: #0b0b0b;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
