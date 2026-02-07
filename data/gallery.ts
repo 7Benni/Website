@@ -12,12 +12,12 @@ export const galleryImages: GalleryImage[] = [
     alt: "Photo 1",
     category: "nature",
     settings: {
-      aperture: "2.8",
-      shutter: "1/250",
+      aperture: "5.6",
+      shutter: "1/500",
       iso: 100,
-      focalLength: "35",
-      camera: "Canon EOS R",
-      lens: "35mm f/1.8"
+      focalLength: "135",
+      camera: "Canon EOS 200D",
+      lens: "28-135mm"
     }
   },
   {
@@ -26,12 +26,12 @@ export const galleryImages: GalleryImage[] = [
     alt: "Photo 2",
     category: "nature",
     settings: {
-      aperture: "4",
-      shutter: "1/125",
-      iso: 200,
-      focalLength: "50",
-      camera: "Sony A7 III",
-      lens: "50mm f/1.8"
+      aperture: "3.2",
+      shutter: "1/800",
+      iso: 800,
+      focalLength: "109",
+      camera: "Canon EOS R8",
+      lens: "TAMRON SP 70-200mm F/2.8"
     }
   },
   {
@@ -40,12 +40,12 @@ export const galleryImages: GalleryImage[] = [
     alt: "Photo 3",
     category: "wildlife",
     settings: {
-      aperture: "5.6",
-      shutter: "1/500",
-      iso: 100,
-      focalLength: "24",
-      camera: "DJI Air 2S",
-      lens: "Integrated"
+      aperture: "3.2",
+      shutter: "1/1600",
+      iso: 1600,
+      focalLength: "200",
+      camera: "Canon EOS 200D",
+      lens: "TAMRON SP 70-200mm F/2.8"
     }
   },
   {
@@ -54,12 +54,12 @@ export const galleryImages: GalleryImage[] = [
     alt: "Photo 4",
     category: "wildlife",
     settings: {
-      aperture: "8",
-      shutter: "1/60",
-      iso: 200,
-      focalLength: "70",
-      camera: "Nikon Z6",
-      lens: "70-200mm"
+      aperture: "2.8",
+      shutter: "1/1000",
+      iso: 1600,
+      focalLength: "134",
+      camera: "Canon EOS 200D",
+      lens: "TAMRON SP 70-200mm F/2.8"
     }
   },
   {
@@ -68,12 +68,12 @@ export const galleryImages: GalleryImage[] = [
     alt: "Photo 5",
     category: "nature",
     settings: {
-      aperture: "11",
-      shutter: "1/30",
-      iso: 100,
-      focalLength: "24",
-      camera: "Canon EOS R5",
-      lens: "24-70mm"
+      aperture: "3.5",
+      shutter: "1/2000",
+      iso: 160,
+      focalLength: "200",
+      camera: "Canon EOS R8",
+      lens: "TAMRON SP 70-200mm F/2.8"
     }
   },
   {
@@ -82,12 +82,12 @@ export const galleryImages: GalleryImage[] = [
     alt: "Photo 6",
     category: "dogs",
     settings: {
-      aperture: "4",
-      shutter: "1/200",
-      iso: 400,
-      focalLength: "85",
-      camera: "Sony A7R IV",
-      lens: "85mm f/1.4"
+      aperture: "3.5",
+      shutter: "1/2000",
+      iso: 160,
+      focalLength: "200",
+      camera: "Canon EOS R8",
+      lens: "TAMRON SP 70-200mm F/2.8"
     }
   },
   {
@@ -96,12 +96,12 @@ export const galleryImages: GalleryImage[] = [
     alt: "Photo 7",
     category: "nature",
     settings: {
-      aperture: "6.3",
-      shutter: "1/160",
+      aperture: "2.2",
+      shutter: "1/1000",
       iso: 200,
-      focalLength: "35",
-      camera: "Fujifilm X-T4",
-      lens: "35mm f/2"
+      focalLength: "50",
+      camera: "Canon EOS 200D",
+      lens: "EF50mm f/1.8 STM"
     }
   },
   {
@@ -110,12 +110,12 @@ export const galleryImages: GalleryImage[] = [
     alt: "Photo 8",
     category: "nature",
     settings: {
-      aperture: "9",
-      shutter: "1/80",
+      aperture: "1.8",
+      shutter: "1/800",
       iso: 100,
-      focalLength: "16",
-      camera: "Olympus OM-D",
-      lens: "16-35mm"
+      focalLength: "50",
+      camera: "Canon EOS 200D",
+      lens: "EF50mm f/1.8 STM"
     }
   },
   {
@@ -124,12 +124,12 @@ export const galleryImages: GalleryImage[] = [
     alt: "Photo 9",
     category: "wildlife",
     settings: {
-      aperture: "11",
-      shutter: "1/125",
-      iso: 100,
-      focalLength: "24",
-      camera: "Canon 5D Mark IV",
-      lens: "24-70mm"
+      aperture: "3.5",
+      shutter: "1/1000",
+      iso: 1000,
+      focalLength: "200",
+      camera: "Canon EOS R8",
+      lens: "TAMRON SP 70-200mm F/2.8"
     }
   }
 ];
