@@ -37,7 +37,7 @@ export default function ContactPage() {
 
           {/* Instagram Card */}
           <Link
-            href="https://instagram.com"
+            href="https://www.instagram.com/benni.photographie"
             target="_blank"
             rel="noopener noreferrer"
             className="group bg-white/5 border border-white/10 rounded-xl p-8 hover:bg-white/10 hover:border-white/20 transition-all"
@@ -50,7 +50,7 @@ export default function ContactPage() {
                 <h3 className="text-xl font-semibold mb-2">Instagram</h3>
                 <p className="text-gray-400 mb-2">Follow my work</p>
                 <p className="text-white group-hover:text-pink-400 transition-colors">
-                  @visualstories
+                  @benni.photographie
                 </p>
               </div>
               <Send size={20} className="opacity-0 group-hover:opacity-100 transition-opacity" />
@@ -86,13 +86,13 @@ export default function ContactPage() {
                 Check out my latest work and behind-the-scenes content on Instagram.
               </p>
               <Link
-                href="https://instagram.com"
+                href="https://www.instagram.com/benni.photographie"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-6 py-3 bg-white text-black font-medium rounded-lg hover:bg-gray-200 transition-all"
               >
                 <Instagram size={18} className="mr-2" />
-                Follow @visualstories
+                Follow @benni.photographie
               </Link>
             </div>
 

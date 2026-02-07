@@ -2,7 +2,7 @@ import { Instagram, Mail, Github, Twitter } from "lucide-react";
 import Link from "next/link";
 
 const socialLinks = [
-  { name: "Instagram", icon: Instagram, href: "https://www.instagram.com/benni.photographie?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" },
+  { name: "Instagram", icon: Instagram, href: "https://www.instagram.com/benni.photographie" },
   { name: "Twitter", icon: Twitter, href: "https://twitter.com" },
   { name: "GitHub", icon: Github, href: "https://github.com" },
   { name: "Email", icon: Mail, href: "mailto:hello@example.com" },
