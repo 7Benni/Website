@@ -26,9 +26,17 @@ export default function HomePage() {
             <span className="text-sm font-medium">Bennis Photographie</span>
           </div>
           
-          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mb-6 tracking-tight">
-            Bennis Photographie
-          </h1>
+          <div className="mb-6">
+            <Image
+              src="/Website/images/logo.jpg"
+              alt="Benjamin Krause"
+              width={800}
+              height={120}
+              className="max-w-full h-auto mx-auto"
+              style={{ filter: 'brightness(1.2) contrast(1.1)' }}
+              priority
+            />
+          </div>
           
           <p className="text-xl sm:text-2xl text-gray-300 mb-10 max-w-2xl mx-auto">
             Capturing the extraordinary in everyday moments through the lens of creativity and passion
