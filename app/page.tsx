@@ -27,7 +27,7 @@ export default function HomePage() {
           </div>
           
           <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mb-6 tracking-tight">
-            Visual Stories
+            Bennis Photographie
           </h1>
           
           <p className="text-xl sm:text-2xl text-gray-300 mb-10 max-w-2xl mx-auto">
