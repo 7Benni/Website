@@ -1,76 +1,81 @@
 import { GalleryImage } from "@/types";
 
+// Images go in public/images/ folder
+// Add your photos there and they'll automatically appear in the gallery
+// Supported formats: .jpg, .png, .webp
+// Example: public/images/photo1.jpg -> displays as /Website/images/photo1.jpg
+
 export const galleryImages: GalleryImage[] = [
   {
     id: 1,
-    src: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
-    alt: "Mountain landscape at sunset",
+    src: "/Website/images/photo1.jpg",
+    alt: "Photo 1",
     category: "landscape"
   },
   {
     id: 2,
-    src: "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800&q=80",
-    alt: "Starry night sky over mountains",
+    src: "/Website/images/photo2.jpg",
+    alt: "Photo 2",
     category: "landscape"
   },
   {
     id: 3,
-    src: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&q=80",
-    alt: "Aerial view of forest road",
+    src: "/Website/images/photo3.jpg",
+    alt: "Photo 3",
     category: "aerial"
   },
   {
     id: 4,
-    src: "https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=800&q=80",
-    alt: "Misty forest morning",
+    src: "/Website/images/photo4.jpg",
+    alt: "Photo 4",
     category: "nature"
   },
   {
     id: 5,
-    src: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&q=80",
-    alt: "Desert road leading to mountains",
+    src: "/Website/images/photo5.jpg",
+    alt: "Photo 5",
     category: "landscape"
   },
   {
     id: 6,
-    src: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80",
-    alt: "Green forest path",
+    src: "/Website/images/photo6.jpg",
+    alt: "Photo 6",
     category: "nature"
   },
   {
     id: 7,
-    src: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&q=80",
-    alt: "Northern lights over lake",
+    src: "/Website/images/photo7.jpg",
+    alt: "Photo 7",
     category: "landscape"
   },
   {
     id: 8,
-    src: "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=800&q=80",
-    alt: "Mountain lake reflection",
+    src: "/Website/images/photo8.jpg",
+    alt: "Photo 8",
     category: "landscape"
   },
   {
     id: 9,
-    src: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
-    alt: "Ocean waves at sunset",
+    src: "/Website/images/photo9.jpg",
+    alt: "Photo 9",
     category: "seascape"
   },
   {
     id: 10,
-    src: "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=800&q=80",
-    alt: "City skyline architecture",
+    src: "/Website/images/photo10.jpg",
+    alt: "Photo 10",
     category: "urban"
   },
   {
     id: 11,
-    src: "https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?w=800&q=80",
-    alt: "Mountain peaks in clouds",
+    src: "/Website/images/photo11.jpg",
+    alt: "Photo 11",
     category: "landscape"
   },
   {
     id: 12,
-    src: "https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=800&q=80",
-    alt: "Waterfall in tropical forest",
+    src: "/Website/images/photo12.jpg",
+    alt: "Photo 12",
     category: "nature"
   }
 ];
