@@ -52,9 +52,9 @@ export default function GalleryPage() {
           {filteredImages.map((image, index) => (
             <div
               key={image.id}
-              className="group relative break-inside-avoid overflow-hidden cursor-pointer"
+              className="group relative break-inside-avoid overflow-hidden rounded-lg cursor-pointer"
             >
-              <div className="relative aspect-[4/3] sm:aspect-auto">
+              <div className="relative aspect-[4/3] sm:aspect-auto rounded-lg overflow-hidden">
                 <Image
                   src={image.src}
                   alt={image.alt}
@@ -64,17 +64,13 @@ export default function GalleryPage() {
                   loading={index < 6 ? "eager" : "lazy"}
                 />
 
-                {/* Read-only overlay on hover */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex items-end">
-                  <div className="w-full p-4">
-                    <div className="bg-black/40 p-3 rounded-md flex items-center justify-between">
-                      <div>
-                        <p className="text-white font-medium mb-1">{image.alt}</p>
-                        <span className="text-gray-300 text-sm capitalize flex items-center gap-2">
-                          <Tag size={14} /> {image.category}
-                        </span>
-                      </div>
-                    </div>
+                {/* Read-only overlay on hover - centered like the original layout */}
+                <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex items-center justify-center">
+                  <div className="text-center px-4">
+                    <p className="text-white font-medium mb-2 text-lg">{image.alt}</p>
+                    <span className="text-gray-300 text-sm capitalize inline-flex items-center gap-2">
+                      <Tag size={14} /> {image.category}
+                    </span>
                   </div>
                 </div>
               </div>
