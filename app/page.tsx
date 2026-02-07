@@ -19,27 +19,21 @@ export default function HomePage() {
           <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black"></div>
         </div>
 
-        {/* Hero Content */}
+        {/* Hero Content (typographic) */}
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
           <div className="inline-flex items-center justify-center p-2 bg-white/10 backdrop-blur-sm rounded-full mb-6">
             <Camera className="mr-2" size={20} />
             <span className="text-sm font-medium">Bennis Photographie</span>
           </div>
-          
-          <div className="mb-6">
-            <Image
-              src="/Website/images/logo.jpg"
-              alt="Benjamin Krause"
-              width={800}
-              height={120}
-              className="max-w-full h-auto mx-auto"
-              style={{ filter: 'brightness(1.2) contrast(1.1)' }}
-              priority
-            />
-          </div>
-          
-          <p className="text-xl sm:text-2xl text-gray-300 mb-10 max-w-2xl mx-auto">
-            Capturing the extraordinary in everyday moments through the lens of creativity and passion
+
+          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold leading-tight tracking-tight text-white mb-4">
+            Bennis Photographie
+          </h1>
+
+          <span className="mx-auto block w-24 h-1 bg-white/20 rounded-full mb-6"></span>
+
+          <p className="text-lg sm:text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+            Capturing the extraordinary in everyday moments through the lens of creativity and passion.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -50,7 +44,7 @@ export default function HomePage() {
               View Gallery
               <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
             </Link>
-            
+
             <Link
               href="/contact"
               className="inline-flex items-center px-8 py-4 border border-white/30 font-medium rounded-lg hover:bg-white/10 transition-colors backdrop-blur-sm"
