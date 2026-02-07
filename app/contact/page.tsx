@@ -57,61 +57,7 @@ export default function ContactPage() {
             </div>
           </Link>
         </div>
-
-        {/* Additional Contact Methods */}
-        <div className="bg-white/5 border border-white/10 rounded-xl p-8 md:p-12">
-          <div className="flex items-center mb-8">
-            <Mail size={24} className="mr-3" />
-            <h2 className="text-2xl font-bold">Get In Touch</h2>
-          </div>
-
-          <div className="space-y-6">
-            <div>
-              <h3 className="text-lg font-semibold mb-2">Email</h3>
-              <p className="text-gray-400 mb-2">
-                The fastest way to reach me is via email.
-              </p>
-              <Link
-                href="mailto:hello@visualstories.com"
-                className="inline-flex items-center px-6 py-3 bg-white text-black font-medium rounded-lg hover:bg-gray-200 transition-all"
-              >
-                <Mail size={18} className="mr-2" />
-                Send Email
-              </Link>
-            </div>
-
-            <div className="border-t border-white/10 pt-6">
-              <h3 className="text-lg font-semibold mb-2">Follow On Instagram</h3>
-              <p className="text-gray-400 mb-2">
-                Check out my latest work and behind-the-scenes content on Instagram.
-              </p>
-              <Link
-                href="https://www.instagram.com/benni.photographie"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 bg-white text-black font-medium rounded-lg hover:bg-gray-200 transition-all"
-              >
-                <Instagram size={18} className="mr-2" />
-                Follow @benni.photographie
-              </Link>
-            </div>
-
-            <div className="border-t border-white/10 pt-6">
-              <h3 className="text-lg font-semibold mb-2">Response Time</h3>
-              <p className="text-gray-400">
-                I typically respond to inquiries within 24-48 hours. Looking forward to collaborating with you!
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Additional Info */}
-        <div className="mt-12 text-center">
-          <div className="inline-flex items-center text-gray-400">
-            <MapPin size={18} className="mr-2" />
-            <span>Based in San Francisco, CA • Available Worldwide</span>
-          </div>
-        </div>
+        
       </div>
     </div>
   );
