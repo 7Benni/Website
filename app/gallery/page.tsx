@@ -71,6 +71,24 @@ export default function GalleryPage() {
                     <span className="text-gray-300 text-sm capitalize inline-flex items-center gap-2">
                       <Tag size={14} /> {image.category}
                     </span>
+
+                    {/* Photo settings (if present) */}
+                    {image.settings && (
+                      <div className="mt-3 flex justify-center flex-wrap gap-2">
+                        {image.settings.aperture && (
+                          <span className="bg-white/10 px-2 py-1 rounded text-xs">Aperture: f/{image.settings.aperture}</span>
+                        )}
+                        {image.settings.shutter && (
+                          <span className="bg-white/10 px-2 py-1 rounded text-xs">Shutter: {image.settings.shutter}</span>
+                        )}
+                        {image.settings.iso && (
+                          <span className="bg-white/10 px-2 py-1 rounded text-xs">ISO {image.settings.iso}</span>
+                        )}
+                        {image.settings.focalLength && (
+                          <span className="bg-white/10 px-2 py-1 rounded text-xs">{image.settings.focalLength} mm</span>
+                        )}
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>
