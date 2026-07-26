@@ -28,7 +28,7 @@ To change photo descriptions or categories, edit `data/gallery.ts`:
 ```typescript
 {
   id: 1,
-  src: "/Website/images/photo1.jpg",
+  src: "/images/photo1.jpg",
   alt: "My beautiful mountain view",
   category: "landscape"
 }

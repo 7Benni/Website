@@ -7,10 +7,6 @@ async function extractExif() {
     const exifr = require('exifr');
     
     const imagesDir = path.join(__dirname, '../public/images');
-    const galleryDataPath = path.join(__dirname, '../data/gallery.ts');
-    
-    // Read current gallery data to preserve categories and alt text
-    const galleryContent = fs.readFileSync(galleryDataPath, 'utf-8');
     
     // Get all image files
     const files = fs.readdirSync(imagesDir)
@@ -65,8 +61,7 @@ async function extractExif() {
     results.forEach(r => {
       console.log(`${r.file}: ${r.settings ? '✓ Has EXIF' : '✗ No EXIF'}`);
     });
-    console.log('\nTo update gallery.ts with this data, manually copy the settings');
-    console.log('or create an update script that merges this with existing data.\n');
+    console.log('\nTo update gallery.ts with this data, manually copy the settings.\n');
     
   } catch (error) {
     console.error('Error:', error);

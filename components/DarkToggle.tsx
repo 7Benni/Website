@@ -1,6 +1,5 @@
 "use client";
 
-import { Sun, Moon } from "lucide-react";
 import { useEffect, useState } from "react";
 
 export default function DarkToggle() {
@@ -38,9 +37,9 @@ export default function DarkToggle() {
     <button
       onClick={toggle}
       aria-label="Toggle theme"
-      className="p-2 rounded-md hover:bg-white/5 transition-colors"
+      className="px-3 py-2 rounded-md border border-white/10 bg-white/5 text-sm font-medium hover:bg-white/10 transition-colors"
     >
-      {isLight ? <Sun size={18} /> : <Moon size={18} />}
+      {isLight ? "Light" : "Dark"}
     </button>
   );
 }

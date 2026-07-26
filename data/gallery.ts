@@ -1,14 +1,12 @@
 import { GalleryImage } from "@/types";
 
-// Images go in public/images/ folder
-// Add your photos there and they'll automatically appear in the gallery
-// Supported formats: .jpg, .png, .webp
-// Example: public/images/photo1.jpg -> displays as /Website/images/photo1.jpg
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+const assetPath = (path: string) => `${basePath}${path.startsWith("/") ? path : `/${path}`}`;
 
 export const galleryImages: GalleryImage[] = [
   {
     id: 1,
-    src: "/Website/images/photo1.JPG",
+    src: assetPath("/images/photo1.JPG"),
     alt: "Photo 1",
     category: "nature",
     settings: {
@@ -22,7 +20,7 @@ export const galleryImages: GalleryImage[] = [
   },
   {
     id: 2,
-    src: "/Website/images/photo2.JPG",
+    src: assetPath("/images/photo2.JPG"),
     alt: "Photo 2",
     category: "nature",
     settings: {
@@ -36,7 +34,7 @@ export const galleryImages: GalleryImage[] = [
   },
   {
     id: 3,
-    src: "/Website/images/photo3.JPG",
+    src: assetPath("/images/photo3.JPG"),
     alt: "Photo 3",
     category: "wildlife",
     settings: {
@@ -50,7 +48,7 @@ export const galleryImages: GalleryImage[] = [
   },
   {
     id: 4,
-    src: "/Website/images/photo4.JPG",
+    src: assetPath("/images/photo4.JPG"),
     alt: "Photo 4",
     category: "wildlife",
     settings: {
@@ -64,7 +62,7 @@ export const galleryImages: GalleryImage[] = [
   },
   {
     id: 5,
-    src: "/Website/images/photo5.JPG",
+    src: assetPath("/images/photo5.JPG"),
     alt: "Photo 5",
     category: "nature",
     settings: {
@@ -78,7 +76,7 @@ export const galleryImages: GalleryImage[] = [
   },
   {
     id: 6,
-    src: "/Website/images/photo6.JPG",
+    src: assetPath("/images/photo6.JPG"),
     alt: "Photo 6",
     category: "dogs",
     settings: {
@@ -92,7 +90,7 @@ export const galleryImages: GalleryImage[] = [
   },
   {
     id: 7,
-    src: "/Website/images/photo7.JPG",
+    src: assetPath("/images/photo7.JPG"),
     alt: "Photo 7",
     category: "nature",
     settings: {
@@ -106,7 +104,7 @@ export const galleryImages: GalleryImage[] = [
   },
   {
     id: 8,
-    src: "/Website/images/photo8.JPG",
+    src: assetPath("/images/photo8.JPG"),
     alt: "Photo 8",
     category: "nature",
     settings: {
@@ -120,7 +118,7 @@ export const galleryImages: GalleryImage[] = [
   },
   {
     id: 9,
-    src: "/Website/images/photo9.jpg",
+    src: assetPath("/images/photo9.jpg"),
     alt: "Photo 9",
     category: "wildlife",
     settings: {

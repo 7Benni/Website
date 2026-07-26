@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X } from "lucide-react";
 import DarkToggle from "@/components/DarkToggle";
 import { useState } from "react";
 
@@ -18,46 +17,40 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 bg-black/95 backdrop-blur-sm border-b border-white/10">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          {/* Logo */}
-          <Link href="/" className="text-xl font-bold tracking-tight hover:text-gray-300 transition-colors">
-            Bennis Photographie
+    <nav className="sticky top-0 z-50 bg-[var(--surface)] backdrop-blur-sm border-b border-[var(--border)] transition-colors duration-300">
+      <div className="w-full max-w-none mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="flex items-center justify-between h-16 gap-6">
+          <Link href="/" className="text-xl font-bold tracking-tight hover:text-gray-300 transition-colors whitespace-nowrap">
+            Benjamin Krause Photography
           </Link>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex items-center gap-6 lg:gap-8 ml-auto">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 className={`transition-colors ${
                   pathname === link.href
-                    ? "text-white font-medium"
-                    : "text-gray-400 hover:text-white"
+                    ? "text-[var(--foreground)] font-medium"
+                    : "text-[var(--muted)] hover:text-[var(--foreground)]"
                 }`}
               >
                 {link.label}
               </Link>
             ))}
-          </div>
 
-          <div className="hidden md:flex items-center space-x-4">
             <DarkToggle />
           </div>
 
-          {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 hover:bg-white/10 rounded-lg transition-colors"
+            className="md:hidden px-3 py-2 text-sm font-medium rounded-md border border-white/10 bg-white/5 hover:bg-white/10 transition-colors"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            {isMenuOpen ? "Close" : "Menu"}
           </button>
         </div>
 
-        {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden py-4 space-y-2">
             {navLinks.map((link) => (
@@ -66,8 +59,8 @@ export default function Navbar() {
                 href={link.href}
                 className={`block px-4 py-2 rounded-lg transition-colors ${
                   pathname === link.href
-                    ? "bg-white/10 text-white font-medium"
-                    : "text-gray-400 hover:bg-white/5 hover:text-white"
+                      ? "bg-white/10 text-[var(--foreground)] font-medium"
+                      : "text-[var(--muted)] hover:bg-white/5 hover:text-[var(--foreground)]"
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >

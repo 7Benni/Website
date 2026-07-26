@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { useEffect } from "react";
-import { X, ArrowLeft, ArrowRight } from "lucide-react";
 
 interface LightboxProps {
   images: { src: string; alt?: string }[];
@@ -28,18 +27,18 @@ export default function Lightbox({ images, index, onClose, onChange }: LightboxP
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4">
       <button
         onClick={onClose}
-        className="absolute top-6 right-6 p-2 rounded-md hover:bg-white/10"
+        className="absolute top-6 right-6 rounded-md border border-white/15 bg-black/40 px-3 py-2 text-sm hover:bg-white/10"
         aria-label="Close"
       >
-        <X size={22} />
+        Close
       </button>
 
       <button
         onClick={() => onChange(Math.max(0, index - 1))}
-        className="absolute left-6 top-1/2 -translate-y-1/2 p-2 rounded-md hover:bg-white/10"
+        className="absolute left-6 top-1/2 -translate-y-1/2 rounded-md border border-white/15 bg-black/40 px-3 py-2 text-sm hover:bg-white/10"
         aria-label="Previous"
       >
-        <ArrowLeft size={22} />
+        Previous
       </button>
 
       <div className="max-w-[90vw] max-h-[90vh] w-full h-full flex items-center justify-center">
@@ -56,10 +55,10 @@ export default function Lightbox({ images, index, onClose, onChange }: LightboxP
 
       <button
         onClick={() => onChange(Math.min(images.length - 1, index + 1))}
-        className="absolute right-6 top-1/2 -translate-y-1/2 p-2 rounded-md hover:bg-white/10"
+        className="absolute right-6 top-1/2 -translate-y-1/2 rounded-md border border-white/15 bg-black/40 px-3 py-2 text-sm hover:bg-white/10"
         aria-label="Next"
       >
-        <ArrowRight size={22} />
+        Next
       </button>
     </div>
   );

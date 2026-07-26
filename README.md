@@ -1,19 +1,3 @@
-# Photography Portfolio Website
-
-A modern, minimalist photography portfolio built with Next.js 16, TypeScript, and Tailwind CSS.
-
-## Features
-
-- 🎨 Dark mode default theme with clean, minimalist design
-- 📱 Fully responsive mobile-first design
-- 🖼️ Masonry grid gallery with hover effects
-- 🎯 TypeScript for type safety
-- ⚡ Next.js App Router for optimal performance
-- 🎭 Lucide React icons
-- 📷 Categorized gear/equipment showcase
-- 📧 Contact page with email and social links
-- 🚀 Ready for GitHub Pages deployment
-
 ## Getting Started
 
 ### Install Dependencies
@@ -65,7 +49,6 @@ npm start
 - **Next.js 16** - React framework with App Router
 - **TypeScript** - Type-safe development
 - **Tailwind CSS** - Utility-first CSS framework
-- **Lucide React** - Beautiful icon library
 - **Geist Font** - Modern, clean typography
 
 ## Deployment to GitHub Pages
@@ -110,7 +93,7 @@ If you have a custom domain:
 
 ### Update Gallery Images
 
-Edit [data/gallery.ts](data/gallery.ts) to add/modify gallery images. Uses Unsplash placeholders by default.
+Edit [data/gallery.ts](data/gallery.ts) to curate the hand-picked gallery images shown on the site.
 
 ### Update Gear List
 
@@ -124,14 +107,11 @@ Update colors and styles in:
 
 ### Social Links
 
-Update social media links in [components/Footer.tsx](components/Footer.tsx).
+Update social media links in [data/contact.ts](data/contact.ts).
 
 ### Contact Information
 
-Update contact details in [app/contact/page.tsx](app/contact/page.tsx):
-- Email address
-- Instagram handle
-- Additional contact information
+Update contact details in [data/contact.ts](data/contact.ts) and [app/contact/page.tsx](app/contact/page.tsx).
 
 ## License
 

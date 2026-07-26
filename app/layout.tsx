@@ -10,8 +10,8 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "Bennis Photographie | Photography Portfolio",
-  description: "Photography portfolio by Bennis Photographie — showcasing visual stories through stunning imagery",
+  title: "Benjamin Krause Photography | Photography Portfolio",
+  description: "Photography portfolio by Benjamin Krause — showcasing visual stories through striking imagery",
 };
 
 export default function RootLayout({
@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} antialiased bg-black text-white min-h-screen flex flex-col`}>
+      <body className={`${geistSans.variable} antialiased bg-[var(--background)] text-[var(--foreground)] min-h-screen flex flex-col transition-colors duration-300`}>
         <Navbar />
         <main className="flex-grow">
           {children}

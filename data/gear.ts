@@ -1,40 +1,40 @@
-import { GearItem } from "@/types";
+import type { GearCategoryKey, GearItem } from "@/types";
 
-// Aggregated gear based on photos in data/gallery.ts
+export const gearCategories = [
+  { key: "camera", label: "Cameras" },
+  { key: "lens", label: "Lenses" },
+  { key: "drone", label: "Drones" },
+  { key: "accessory", label: "Accessories" },
+] as const;
+
+export const gearCategoryMap = Object.fromEntries(
+  gearCategories.map((category) => [category.key, category]),
+) as Record<GearCategoryKey, (typeof gearCategories)[number]>;
+
+export const getGearCategoryLabel = (category: string) => {
+  return gearCategoryMap[category as GearCategoryKey]?.label ?? category;
+};
+
 export const gearList: GearItem[] = [
-  {
-    id: 1,
-    name: "Canon EOS 200D",
-    category: "camera",
-    description: "Compact DSLR used throughout the gallery (portrait and wildlife shots).",
-    specs: ["Used in 5 photos", "See gallery for example settings"]
-  },
   {
     id: 2,
     name: "Canon EOS R8",
     category: "camera",
-    description: "Mirrorless camera used for action and telephoto shots in the gallery.",
-    specs: ["Used in 4 photos", "See gallery for example settings"]
+    description: "Primary mirrorless body for portraits, wildlife, and telephoto work.",
+    specs: ["Fast autofocus", "Strong low-light performance", "Used throughout the gallery"]
   },
   {
     id: 3,
-    name: "28-135mm",
+    name: "24-105mm f/4L IS USM",
     category: "lens",
-    description: "Standard zoom lens used for general purpose shots in the gallery.",
-    specs: ["Used in 1 photo", "Versatile focal range"]
+    description: "Versatile standard zoom for all-purpose shooting and travel.",
+    specs: ["Flexible focal range", "Optical image stabilization", "Useful for everyday coverage"]
   },
   {
     id: 4,
-    name: "TAMRON SP 70-200mm F/2.8",
+    name: "Canon Rf 100-400mm f/5.6-8 IS USM",
     category: "lens",
-    description: "Telephoto zoom used for wildlife and sports-style shots in the gallery.",
-    specs: ["Used in 6 photos", "Fast f/2.8 aperture for subject separation"]
+    description: "Lightweight telephoto zoom for wildlife and distant subjects.",
+    specs: ["Long reach in a compact body", "Image stabilization", "Well suited to wildlife and action"]
   },
-  {
-    id: 5,
-    name: "EF50mm f/1.8 STM",
-    category: "lens",
-    description: "50mm prime used for shallow-depth portraits and low-light shots.",
-    specs: ["Used in 2 photos", "Compact and lightweight prime"]
-  }
 ];
