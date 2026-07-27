@@ -21,6 +21,34 @@ npm run build
 npm start
 ```
 
+## Deploy to GitHub Pages
+
+This site is configured to deploy to **GitHub Pages** automatically via GitHub Actions.
+
+### One-time Setup (GitHub)
+
+1. Go to your repository on GitHub: **Settings → Pages**
+2. Under **Source**, select **GitHub Actions**
+3. The workflow in `.github/workflows/deploy.yml` will handle the rest
+
+### How It Works
+
+- Every push to the `master` branch triggers the workflow
+- The workflow builds the Next.js site as a **static export** (`output: 'export'`)
+- The `NEXT_PUBLIC_BASE_PATH=/Website` environment variable sets the correct base path for project pages
+- The built files in `./out` are uploaded as a GitHub Pages artifact and deployed
+
+### Local Preview of Production Build
+
+```bash
+npm run build
+npx serve@latest out
+```
+
+### Manual Deployment
+
+You can also trigger a deployment manually from the **Actions** tab in your GitHub repository — select the "Deploy to GitHub Pages" workflow and click **Run workflow**.
+
 ## Project Structure
 
 ```

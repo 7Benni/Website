@@ -1,5 +1,6 @@
 "use client";
 
+import { Suspense } from "react";
 import Image from "next/image";
 import { galleryImages } from "@/data/gallery";
 import { useEffect, useState } from "react";
@@ -7,7 +8,7 @@ import Lightbox from "@/components/Lightbox";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { getPhotoCategoryLabel, photoCategories } from "@/data/siteContent";
 
-export default function GalleryPage() {
+function GalleryContent() {
   const [filter, setFilter] = useState<string>("all");
   const router = useRouter();
   const pathname = usePathname();
@@ -148,5 +149,13 @@ export default function GalleryPage() {
         )}
       </div>
     </div>
+  );
+}
+
+export default function GalleryPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen py-20 px-4"><div className="max-w-[1680px] mx-auto"><p className="text-[var(--muted)] text-lg">Loading gallery...</p></div></div>}>
+      <GalleryContent />
+    </Suspense>
   );
 }
